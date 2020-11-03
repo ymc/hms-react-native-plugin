@@ -18,8 +18,7 @@ package com.huawei.hms.rn.map;
 
 import android.content.Context;
 import android.graphics.Color;
-
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.ThemedReactContext;

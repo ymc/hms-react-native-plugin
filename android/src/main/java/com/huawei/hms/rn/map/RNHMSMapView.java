@@ -16,17 +16,15 @@
 
 package com.huawei.hms.rn.map;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.location.Location;
 import android.location.LocationManager;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -812,7 +810,7 @@ public class RNHMSMapView extends MapView implements OnMapReadyCallback, Lifecyc
             }
         }
 
-        @Override
+        //@Override
         public void receiveCommand(@NonNull RNHMSMapView root, String commandId, @Nullable ReadableArray args) {
             ReactUtils.NamedCommand namedCommand = ReactUtils.getCommand(commandId, Command.values());
             assert namedCommand != null;
